@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-API_KEY = "bdffc12ea046c5f705689e5cdccd42dc"
+API_KEY = "bdffc12ea046c5f705689e5cdc" #It's a dummy API
 base_url = "https://api.openweathermap.org/data/2.5"
 
 def get_coordinates(city):
@@ -35,3 +35,4 @@ for day in forecast_data["list"][:7]:
     condition = day["weather"][0]["description"]
 
     print(f"{date} : {temp_max}°C - {condition}")
+
